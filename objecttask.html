@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // my_object= [23, “Jane”, 560, [“Lesson”, “Maths”, {“currency” : “KES”}], 987, 76,”John”]
+        // Display:
+        // 1. KES
+        my_object= [23,'Jane', 560, ['Lesson', 'Maths1', {'currency' : 'KES'}], 987, 76,'John']
+        console.log(my_object[3][2]['currency'])
+        
+        // 2. 560
+        console.log(my_object[2])
+        // 3. Maths
+        console.log(my_object[3][1])
+        // 4. In the object with the key currency, add another key “amount” with value 90
+        
+       
+        // Reverse 987 to 789  using an inbuilt -methods or Assigning 789 manually.
+        // Hint: arrays can be reversed using reverse() functions
+        // convert into a string
+        my_object[4]=String(my_object[4])
+        // convert into an array
+        my_object[4]=my_object[4].split("")
+        // reverse the array
+        my_object[4]=my_object[4].reverse()
+        // convert an array into a string
+        my_object[4]=my_object[4].join("")
+        // convert to a number
+        my_object[4]=Number(my_object[4])
+        console.log(my_object)
+        // 6. Change the name “John” to “Jane” .
+        my_object[6]="Jane" 
+        console.log(my_object)
+        
+
+
+
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+
+
+
+
+    </script>
+</body>
+
+</html>

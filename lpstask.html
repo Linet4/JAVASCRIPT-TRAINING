@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="loopstask.js"></script>
+    <script>
+        // Create a new HTML file and attempt the question below:
+        // Using the link HERE , copy the array of JSON objects containing countries with their populations. Display in an object, how many countries have population between 0 - 50m, 50m - 100m, > 100m as the keys
+        // e.g 
+        // pops = { “0-50m” : 216, “50-100m” : 16, ” >100m” : 13 }
+
+
+        let zero_fifty = []
+        let fifty_hundred = []
+        let hundred = []
+      
+
+        for (let i = 0; i <= countries.length; i++) {
+            let population = countries[i];
+            if (population >= 0 && population <= 50000000) {
+                zero_fifty.push(population);
+            } else if (population > 50000000 && population <= 100000000) {
+                fifty_hundred.push(population);
+            } else {
+                hundred.push(population);
+            }
+           
+
+
+        }
+        console.log(zero_fifty)
+        console.log(fifty_hundred)
+        console.log(hundred)
+
+        // declare an empty object and add...
+        let pops = {}
+        pops["0-50000000"] = zero_fifty.length
+        pops["50000000-100000000"] = fifty_hundred.length
+        pops["100000000"] = hundred
+
+        console.log(pops)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Write a program which gets a phone number from a form input or terminal.
+        //  Validates the phone number by checking if it starts with
+        //   +254.. or 07.. or 7… or 254.. or 01... or 1.. Convert the number to start with +254… 
+        // e.g if a user enters “0712345678”, the program should display “+254712345678”
+        // e.g if a user enters “0112345678”, the program should display “+254112345678”
+        // e.g if a user enters “712345678”, the program should display “+254712345678”
+        // Once you learn functions,revisit this and write this code inside a function.
+        let phoneNumber = prompt("enter phone number")
+        let valid=""
+        
+        if (phoneNumber.startsWith("+254") && phoneNumber.length == 13) {
+            console.log(phoneNumber, "is valid")
+        }
+        // concert "07" to "+254"
+        else if (phoneNumber.startsWith( "07") && phoneNumber.length == 10) {
+            valid = "+254" + phoneNumber.slice(1, 10)
+            console.log(valid, "is a valid number")
+        }
+        // convert "7" to "+254"
+        else if(phoneNumber.startsWith("7") && phoneNumber.length==9 ){
+            valid="+254" + phoneNumber
+            console.log(valid,"is a valid number")
+        }
+        // convert "254" to "+254"
+        else if(phoneNumber.startsWith("254")  && phoneNumber.length==12){
+            valid="+"+ phoneNumber
+
+        }
+        // convert "01" to "+254"
+        else if(phoneNumber.startsWith("01") && phoneNumber.length==10){
+            valid ="+254" +phoneNumber.slice(1,10)
+            console.log(valid,"is a valid number")
+        }
+        // convert "1" t0 "+254"
+        else if(phoneNumber.startsWith("1") && phoneNumber.length==9){
+            valid ="+254"+ phoneNumber
+            console.log(valid,"is a valid number")
+        }
+        else{
+            console.log("invalid number")
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

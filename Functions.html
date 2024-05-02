@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // write a function that says hello world
+
+
+
+        // write a function that calculate the area of a triangle(user parameters)
+        // take the user input
+        function area_triangle(base, height) {
+            let area = 0.5 * base * height
+            console.log(area)
+        }
+        let base = prompt("enter base")
+        let height = prompt("enter height")
+
+        area_triangle(base, height)
+
+        // write 2 functions that calculates the area of rectangle and square(use parameters)
+        let length = prompt("enter width")
+        let width = prompt("enter height")
+        function Rectanglea_area(width, height) {
+            let area = width * height
+            console.log(area)
+        }
+        Rectanglea_area(width, height)
+        // square
+        let length1 = prompt("enter length")
+        function Square_area(a){
+            let area=a**2
+            return area
+        }
+        
+        let react_area=Square_area(length1)
+        console.log(react_area)
+
+        // write a fuction that checks if a numer is even or odd
+        function check_number(num){
+            let result=""
+            if(num%2==0){
+                result="even"
+            }else{
+                result="odd"
+            }
+            return result
+        }
+        let number=check_number(88)
+        console.log(number)
+        // write a number that takes 3 input numbers from a user then find the largest 
+        // of those inputs assume that all numbers are diff
+        function numbers(num){
+            let result=""
+            if(num1>num2 && num1>num3){
+                result="num1 is greater"
+            }else if(num2>num2 && num2>num3){
+                result="num2 is greater"
+            }else{
+                result="num3 is greater"
+            }
+
+            
+        }
+
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

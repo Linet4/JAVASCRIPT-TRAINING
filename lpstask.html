@@ -19,16 +19,17 @@
         let zero_fifty = []
         let fifty_hundred = []
         let hundred = []
-      
+      console.log(countries)
 
         for (let i = 0; i <= countries.length; i++) {
-            let population = countries[i];
-            if (population >= 0 && population <= 50000000) {
-                zero_fifty.push(population);
-            } else if (population > 50000000 && population <= 100000000) {
-                fifty_hundred.push(population);
+            console.log(countries[i].population)
+             pop = countries[i].population
+            if (pop >= 0 && pop <= 50000000) {
+                zero_fifty.push(countries)
+            } else if (pop > 50000000 && pop <= 100000000) {
+                fifty_hundred.push(countries)
             } else {
-                hundred.push(population);
+                hundred.push(countries)
             }
            
 
@@ -37,6 +38,10 @@
         console.log(zero_fifty)
         console.log(fifty_hundred)
         console.log(hundred)
+
+        // console.log(zero_fifty)
+        // console.log(fifty_hundred)
+        // console.log(hundred)
 
         // declare an empty object and add...
         let pops = {}
